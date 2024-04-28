@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 
+
 /*Barra de Navegacion */
 
 .div-nav {
-    background-color: dimgray;  
+    background-color: dimgray;
 }
 
 nav {
@@ -33,6 +34,48 @@ a:hover {
 
 /****************/
 
+/* Banner Carrusel*/
+
+.carrusel {
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    @include neo(1, 1em, 1em);
+}
+
+.carrusel .grande {
+    width: 200%;    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    @include neo(1, 1em, 1em);
+    padding: 2em;
+}
+
+.carrusel .img {
+    width: calc(100%/2);
+    @include neo(1, 1em, 1em);
+}
+
+.carrusel .puntos {
+    width: 100%;
+    padding: .4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel .punto {
+    width: 2em;
+    height: 2em;
+    margin:1em 1em 0; 
+    @include neo(1, 1em, 1em);
+}
+
+
+/*****/
 .form-comments {
     width: 400px;
     background: #24303c;
